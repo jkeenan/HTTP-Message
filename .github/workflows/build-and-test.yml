@@ -127,7 +127,7 @@ jobs:
           path: .
       - run: perl -V
       - run: cpanm --installdeps .
-      - run: prove -lv t
+      - run: prove -l t xt
         env:
           AUTHOR_TESTING: 1
           RELEASE_TESTING: 1
