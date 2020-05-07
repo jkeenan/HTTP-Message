@@ -120,7 +120,7 @@ jobs:
       - name: Set Up Perl
         uses: shogo82148/actions-setup-perl@v1
         with:
-          perl-version: ${{ matrix.perl }}
+          perl-version: ${{ matrix.perl-version }}
       - uses: actions/download-artifact@master
         with:
           name: build_dir
